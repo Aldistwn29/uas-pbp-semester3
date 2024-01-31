@@ -1,0 +1,99 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "adrik6",
+    "password" : "solihin",
+    "name" : "adrik"
+}
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "adrik6",
+    "password" : "solihin"
+}
+
+###
+
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+{
+    "name" : "aldi setiawan 7"
+}
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+{
+    "product_name": "TV",
+    "price": 20,
+    "stock": 20,
+    "description": "Praktis untuk dibawa dan lebih efisien",
+    "category": "Elektronik TV"
+}
+
+###
+
+GET http://localhost:3000/api/products/153
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+###
+
+
+GET http://localhost:3000/api/products
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+###
+
+PUT http://localhost:3000/api/products/153
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+{
+    "product_name": "kulkas Meja Belajar",
+    "price": 20.00,
+    "stock": 10,
+    "description": "Hemat energi",
+    "category": "Eleketronik"
+}
+
+###
+
+DELETE http://localhost:3000/api/products/153
+Content-Type: application/json
+Accept: application/json
+Authorization: 36428b13-1190-4616-8e4d-548ef1e5a3e0
+
+
